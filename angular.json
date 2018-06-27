@@ -61,9 +61,49 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "i18nFile": "src/locale/messages.de.xlf",
+              "i18nFile": "src/locale/messages.de.xlf/messages.xlf",
               "i18nFormat": "xlf",
               "i18nLocale": "de"
+            },
+            "pl": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "i18nFile": "src/locale/messages.pl.xlf/messages.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pl"
+            },
+            "hu": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "i18nFile": "src/locale/messages.hu.xlf/messages.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "pl"
             }
           }
         },
@@ -78,6 +118,12 @@
             },
             "de": {
               "browserTarget": "angular6-i18n:build:de"
+            },
+            "pl": {
+              "browserTarget": "angular6-i18n:build:pl"
+            },
+            "hu": {
+              "browserTarget": "angular6-i18n:build:hu"
             }
           }
         },

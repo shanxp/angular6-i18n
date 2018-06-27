@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="hu" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="dcc7340c54f52c584cafc90883af3e9e4a858677" datatype="html">
+        <source>  Hello world! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+        <target>  Helló Világ ! </target>
+      </trans-unit>
+      <trans-unit id="0de78779b0d1ff33e81eef3d7f32ecec249de587" datatype="html">
+        <source>  Welcome to <x id="INTERPOLATION" equiv-text="{{ title }}"/>! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description"> introduction to the App</note>
+        <note priority="1" from="meaning">welcome to app </note>
+        <target> Willkommen  <x id="INTERPOLATION" equiv-text="{{ title }}"/> </target>
+      </trans-unit>
+      <trans-unit id="introductionHeader" datatype="html">
+        <source>Hello i18n!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <target>  Hallo i18n! </target>
+      </trans-unit>
+      <trans-unit id="c137db3e92e54dfea7d5e877bb703034da2cc2c7" datatype="html">
+        <source>Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <target>Updated: <x id="ICU" equiv-text="{minutes, plural, =0 {...} =1 {...} other {...}}"/>
+        </target>
+      </trans-unit>
+      <trans-unit id="7151c2e67748b726f0864fc443861d45df21d706" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {just now} =1 {one minute ago} other {<x id="INTERPOLATION" equiv-text="{{minutes}}"/> minutes ago by {VAR_SELECT, select, male {male} female {female} other {other} }} }</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <target>{VAR_PLURAL, plural, =0 {gerade eben} =1 {vor einer Minute} other  { vor <x id="INTERPOLATION" equiv-text="{{minutes}}"/> Minuten von {VAR_SELECT, select, male {Mann} female {Frau} other {Andere} }} }</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
