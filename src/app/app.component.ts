@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  minutes = 3 ;
+  dateTime = new Date();
+  gender = 'male'
 }
